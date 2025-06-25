@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     setLoading(true)
-    fetch(`https://radarzotep3.onrender.com/ofertasp3`)
+    fetch(`https://radarzotep3.onrender.com/ofertasp3?page=${page}`)
       .then(response => response.json())
       .then(data => {
         setOfertas(data)
