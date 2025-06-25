@@ -27,8 +27,8 @@ h1 {
 
 .ofertas-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2em;
+  grid-template-columns: repeat(3, 1fr); /* Three columns on big screens */
+  gap: 1.5em;
   justify-items: center;
   margin-bottom: 2.5em;
 }
@@ -161,5 +161,13 @@ h1 {
   .oferta-card img {
     width: 100%;
     max-width: 200px;
+  }
+}
+@media (max-width: 600px) {
+  #root {
+    padding: 1rem 0.2rem;
+  }
+  .oferta-card {
+    padding: 0.7em 0.2em 1em 0.2em;
   }
 }

@@ -89,11 +89,7 @@ function App() {
         LoadingPlaceholder
       ) : (
         <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '24px',
-          }}
+          className='ofertas-grid'
         >
           {ofertas.map((oferta, idx) => (
             <div key={idx} className="oferta-card">
